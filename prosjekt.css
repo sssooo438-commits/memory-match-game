@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f7f7f7;
+}
+
+.game-board {
+  width: 400px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.card {
+  background: #3498db;
+  color: white;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  cursor: pointer;
+  border-radius: 6px;
+  user-select: none;
+}
+
+.card.flipped {
+  background: #2ecc71;
+}
+body {
+  background: #1a1a1a;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  animation: float 10s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% { transform: translateY(100vh) scale(0.5); }
+  100% { transform: translateY(-10vh) scale(1.5); }
+}
+#lives {
+  font-size: 28px;
+  color: red;
+}
+.game-board {
+  width: 500px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 10px;
+  margin: 20px auto;
+}
+
+
